@@ -1,7 +1,8 @@
 import React from 'react';
 import s from './style.module.css';
 import type {FormProps} from 'antd';
-import {Button, Checkbox, Form, Input} from 'antd';
+import {Button, Checkbox, Form, Input, Flex} from 'antd';
+import {Link} from 'react-router-dom';
 
 type FieldType = {
     username?: string;
@@ -53,15 +54,18 @@ export const Login: React.FC = () => (
             >
                 <Input.Password/>
             </Form.Item>
+            <Flex justify="space-between" align="center">
+                <Form.Item<FieldType> name="remember" valuePropName="checked" label={null}>
+                    <Checkbox>Remember me</Checkbox>
+                </Form.Item>
+                <a href="">Forgot password</a>
+            </Flex>
 
-            <Form.Item<FieldType> name="remember" valuePropName="checked" label={null}>
-                <Checkbox>Remember me</Checkbox>
-            </Form.Item>
-
-            <Form.Item label={null}>
-                <Button type="primary" htmlType="submit">
-                    Submit
+            <Form.Item>
+                <Button block type="primary" htmlType="submit">
+                    Log in
                 </Button>
+                or <Link to='/register'>Register now!</Link>
             </Form.Item>
         </Form>
     </div>
