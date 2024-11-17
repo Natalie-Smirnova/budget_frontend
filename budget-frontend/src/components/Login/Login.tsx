@@ -44,7 +44,7 @@ export const Login: React.FC = () => (
                     },
                 ]}
             >
-                <Input/>
+                <Input aria-label="Email input"/>
             </Form.Item>
 
             <Form.Item<FieldType>
@@ -52,7 +52,7 @@ export const Login: React.FC = () => (
                 name="password"
                 rules={[{required: true, message: 'Please input your password!'}]}
             >
-                <Input.Password/>
+                <Input.Password aria-label="Password input"/>
             </Form.Item>
             <Flex justify="space-between" align="center">
                 <Form.Item<FieldType> name="remember" valuePropName="checked" label={null}>

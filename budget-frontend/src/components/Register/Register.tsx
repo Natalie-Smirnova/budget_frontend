@@ -11,6 +11,12 @@ interface DataNodeType {
     children?: DataNodeType[];
 }
 
+interface RegisterFormValues {
+    email: string;
+    password: string;
+    confirm: string;
+}
+
 const formItemLayout = {
     labelCol: {
         xs: { span: 24 },
@@ -33,7 +39,7 @@ const tailFormItemLayout = {
 export const Register: React.FC = () => {
     const [form] = Form.useForm();
 
-    const onFinish = (values: any) => {
+    const onFinish = (values: RegisterFormValues) => {
         console.log('Received values of form: ', values);
     };
 
@@ -60,7 +66,7 @@ export const Register: React.FC = () => {
                     },
                 ]}
             >
-                <Input />
+                <Input aria-label="Email input"/>
             </Form.Item>
 
             <Form.Item
@@ -74,7 +80,7 @@ export const Register: React.FC = () => {
                 ]}
                 hasFeedback
             >
-                <Input.Password />
+                <Input.Password aria-label="Password input"/>
             </Form.Item>
 
             <Form.Item
@@ -97,7 +103,7 @@ export const Register: React.FC = () => {
                     }),
                 ]}
             >
-                <Input.Password />
+                <Input.Password aria-label="Password input conformation"/>
             </Form.Item>
 
             <Form.Item {...tailFormItemLayout}>
