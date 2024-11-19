@@ -1,9 +1,12 @@
-import React from 'react';
+import React, { useState } from 'react';
 import {
     Button,
     Form,
     Input,
+    Grid
 } from 'antd';
+
+const { useBreakpoint } = Grid;
 
 interface DataNodeType {
     value: string;
@@ -38,18 +41,18 @@ const tailFormItemLayout = {
 
 export const Register: React.FC = () => {
     const [form] = Form.useForm();
+    const screens = useBreakpoint()
 
     const onFinish = (values: RegisterFormValues) => {
         console.log('Received values of form: ', values);
     };
-
     return (
         <Form
             {...formItemLayout}
             form={form}
             name="register"
             onFinish={onFinish}
-            style={{ minWidth: 500 }}
+            style={{ minWidth: screens.xs ? '100%' : '500px' }}
             scrollToFirstError
         >
             <Form.Item
