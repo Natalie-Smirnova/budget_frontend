@@ -4,7 +4,32 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="a1e15683-657a-4fbf-8883-d9c1e61b4785" name="Changes" comment="" />
+    <list default="true" id="a1e15683-657a-4fbf-8883-d9c1e61b4785" name="Changes" comment="create atomic design structure">
+      <change afterPath="$PROJECT_DIR$/src/common/Button.tsx" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/common/Input.tsx" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/common/Modal.tsx" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/common/Typography.tsx" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/features/Transactions/AddTransactionForm.tsx" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/features/Transactions/TransactionForm.tsx" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/features/Transactions/TransactionsList.tsx" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/layout/Footer.tsx" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/layout/Header.tsx" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/pages/HomePage.tsx" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/pages/LoginPage.tsx" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/pages/RegisterPage.ts" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/ui-components/Card.tsx" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/ui-components/Navigation.tsx" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/ui-components/Table.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/App.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/App.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/App.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/ExpensesOverview.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/features/Transactions/ExpensesOverview.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/Login/Login.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/features/Auth/Login/Login.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/Login/style.module.css" beforeDir="false" afterPath="$PROJECT_DIR$/src/features/Auth/Login/style.module.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/Register/Register.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/features/Auth/Register/Register.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/index.css" beforeDir="false" afterPath="$PROJECT_DIR$/src/index.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/index.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/index.tsx" afterDir="false" />
+    </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -13,6 +38,7 @@
   <component name="FileTemplateManagerImpl">
     <option name="RECENT_TEMPLATES">
       <list>
+        <option value="TypeScript File" />
         <option value="TypeScript JSX File" />
       </list>
     </option>
@@ -20,49 +46,57 @@
   <component name="Git.Settings">
     <option name="RECENT_BRANCH_BY_REPOSITORY">
       <map>
-        <entry key="$PROJECT_DIR$/.." value="feat/BUD-7-tailwind-config" />
+        <entry key="$PROJECT_DIR$/.." value="main" />
       </map>
     </option>
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$/src" />
+    <option name="ROOT_SYNC" value="DONT_SYNC" />
   </component>
-  <component name="GitHubPullRequestSearchHistory"><![CDATA[{
-  "lastFilter": {
-    "state": "OPEN",
-    "assignee": "Natalie-Smirnova"
+  <component name="GitHubPullRequestSearchHistory">{
+  &quot;lastFilter&quot;: {
+    &quot;state&quot;: &quot;OPEN&quot;,
+    &quot;assignee&quot;: &quot;Natalie-Smirnova&quot;
   }
-}]]></component>
-  <component name="GithubPullRequestsUISettings"><![CDATA[{
-  "selectedUrlAndAccountId": {
-    "url": "https://github.com/Natalie-Smirnova/budget_frontend.git",
-    "accountId": "a9eb7b61-f8aa-432b-91d9-6b113abee678"
+}</component>
+  <component name="GithubPullRequestsUISettings">{
+  &quot;selectedUrlAndAccountId&quot;: {
+    &quot;url&quot;: &quot;https://github.com/Natalie-Smirnova/budget_frontend.git&quot;,
+    &quot;accountId&quot;: &quot;a9eb7b61-f8aa-432b-91d9-6b113abee678&quot;
   }
-}]]></component>
-  <component name="ProjectColorInfo"><![CDATA[{
-  "associatedIndex": 1
-}]]></component>
+}</component>
+  <component name="ProjectColorInfo">{
+  &quot;associatedIndex&quot;: 1
+}</component>
   <component name="ProjectId" id="2pItEgn9gqhgqLqvCyrB7lOYIuU" />
   <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
   <component name="ProjectViewState">
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent"><![CDATA[{
-  "keyToString": {
-    "ASKED_SHARE_PROJECT_CONFIGURATION_FILES": "true",
-    "RunOnceActivity.ShowReadmeOnStart": "true",
-    "RunOnceActivity.git.unshallow": "true",
-    "SHARE_PROJECT_CONFIGURATION_FILES": "true",
-    "git-widget-placeholder": "main",
-    "last_opened_file_path": "/Users/natallia_smirnova/WebstormProjects/Budget_frontend/budget_frontend/budget-frontend",
-    "node.js.detected.package.eslint": "true",
-    "node.js.detected.package.tslint": "true",
-    "node.js.selected.package.eslint": "(autodetect)",
-    "node.js.selected.package.tslint": "(autodetect)",
-    "nodejs_package_manager_path": "npm",
-    "ts.external.directory.path": "/Applications/WebStorm.app/Contents/plugins/javascript-plugin/jsLanguageServicesImpl/external",
-    "vue.rearranger.settings.migration": "true"
+  <component name="PropertiesComponent">{
+  &quot;keyToString&quot;: {
+    &quot;ASKED_SHARE_PROJECT_CONFIGURATION_FILES&quot;: &quot;true&quot;,
+    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
+    &quot;RunOnceActivity.git.unshallow&quot;: &quot;true&quot;,
+    &quot;git-widget-placeholder&quot;: &quot;main&quot;,
+    &quot;last_opened_file_path&quot;: &quot;/Users/natallia_smirnova/WebstormProjects/Budget_frontend/budget_frontend/budget-frontend&quot;,
+    &quot;node.js.detected.package.eslint&quot;: &quot;true&quot;,
+    &quot;node.js.detected.package.tslint&quot;: &quot;true&quot;,
+    &quot;node.js.selected.package.eslint&quot;: &quot;(autodetect)&quot;,
+    &quot;node.js.selected.package.tslint&quot;: &quot;(autodetect)&quot;,
+    &quot;nodejs_package_manager_path&quot;: &quot;npm&quot;,
+    &quot;ts.external.directory.path&quot;: &quot;/Users/natallia_smirnova/WebstormProjects/Budget_frontend/budget_frontend/budget-frontend/node_modules/typescript/lib&quot;,
+    &quot;vue.rearranger.settings.migration&quot;: &quot;true&quot;
   }
-}]]></component>
+}</component>
+  <component name="RecentsManager">
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/src/features/Transactions" />
+      <recent name="$PROJECT_DIR$/src/features/Auth" />
+      <recent name="$PROJECT_DIR$/src/features" />
+      <recent name="$PROJECT_DIR$/src/common" />
+    </key>
+  </component>
   <component name="SharedIndexes">
     <attachedChunks>
       <set>
@@ -78,8 +112,19 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1732465307896</updated>
-      <workItem from="1732465308932" duration="11927000" />
+      <workItem from="1732465308932" duration="12785000" />
+      <workItem from="1732729643552" duration="6664000" />
+      <workItem from="1732811657234" duration="2530000" />
     </task>
+    <task id="LOCAL-00001" summary="homepage">
+      <option name="closed" value="true" />
+      <created>1732728952420</created>
+      <option name="number" value="00001" />
+      <option name="presentableId" value="LOCAL-00001" />
+      <option name="project" value="LOCAL" />
+      <updated>1732728952420</updated>
+    </task>
+    <option name="localTasksCounter" value="2" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -87,6 +132,7 @@
   </component>
   <component name="VcsManagerConfiguration">
     <MESSAGE value="homepage" />
-    <option name="LAST_COMMIT_MESSAGE" value="homepage" />
+    <MESSAGE value="create atomic design structure" />
+    <option name="LAST_COMMIT_MESSAGE" value="create atomic design structure" />
   </component>
 </project>
