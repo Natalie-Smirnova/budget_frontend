@@ -1,0 +1,20 @@
+{
+  "testTimeout": 30000,
+  "collectCoverage": false,
+  "testRegex": "(/__tests__/.*\\.(test|spec))\\.ts$",
+  "collectCoverageFrom": [
+    "src/**/*.ts"
+  ],
+  "transform": {
+    "^.+\\.ts$": [
+      "ts-jest",
+      {
+        "tsconfig": {
+          "target": "esnext",
+          "allowJs": true,
+          "sourceMap": true
+        }
+      }
+    ]
+  }
+}
