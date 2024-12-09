@@ -4,32 +4,7 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="a1e15683-657a-4fbf-8883-d9c1e61b4785" name="Changes" comment="create atomic design structure">
-      <change afterPath="$PROJECT_DIR$/src/common/Button.tsx" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/common/Input.tsx" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/common/Modal.tsx" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/common/Typography.tsx" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/features/Transactions/AddTransactionForm.tsx" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/features/Transactions/TransactionForm.tsx" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/features/Transactions/TransactionsList.tsx" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/layout/Footer.tsx" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/layout/Header.tsx" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/pages/HomePage.tsx" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/pages/LoginPage.tsx" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/pages/RegisterPage.ts" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/ui-components/Card.tsx" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/ui-components/Navigation.tsx" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/ui-components/Table.tsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/App.css" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/App.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/App.tsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/ExpensesOverview.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/features/Transactions/ExpensesOverview.tsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/Login/Login.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/features/Auth/Login/Login.tsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/Login/style.module.css" beforeDir="false" afterPath="$PROJECT_DIR$/src/features/Auth/Login/style.module.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/Register/Register.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/features/Auth/Register/Register.tsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/index.css" beforeDir="false" afterPath="$PROJECT_DIR$/src/index.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/index.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/index.tsx" afterDir="false" />
-    </list>
+    <list default="true" id="a1e15683-657a-4fbf-8883-d9c1e61b4785" name="Changes" comment="create atomic design structure" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
