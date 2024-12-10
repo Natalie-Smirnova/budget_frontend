@@ -1,8 +1,11 @@
 import React from 'react';
 import s from './style.module.css';
 import type {FormProps} from 'antd';
-import {Button, Checkbox, Form, Input, Flex} from 'antd';
+import { Checkbox, Flex} from 'antd';
 import {Link} from 'react-router-dom';
+import {CButton} from '../../../common/Button';
+import {CForm, CFormItem} from '../../../blocks/Form';
+import {CInput, CPasswordInput} from '../../../common/Input'
 
 type FieldType = {
     username?: string;
@@ -20,7 +23,7 @@ const onFinishFailed: FormProps<FieldType>['onFinishFailed'] = (errorInfo) => {
 
 export const Login: React.FC = () => (
     <div className={s.container}>
-        <Form
+        <CForm
             name="basic"
             labelCol={{span: 8}}
             wrapperCol={{span: 16}}
@@ -30,7 +33,7 @@ export const Login: React.FC = () => (
             onFinishFailed={onFinishFailed}
             autoComplete="off"
         >
-            <Form.Item<FieldType>
+            <CFormItem<FieldType>
                 name="username"
                 label="E-mail"
                 rules={[
@@ -44,30 +47,29 @@ export const Login: React.FC = () => (
                     },
                 ]}
             >
-                <Input aria-label="Email input"/>
-            </Form.Item>
+                <CInput aria-label="Email input"/>
+            </CFormItem>
 
-            <Form.Item<FieldType>
+            <CFormItem<FieldType>
                 label="Password"
                 name="password"
                 rules={[{required: true, message: 'Please input your password!'}]}
             >
-                <Input.Password aria-label="Password input"/>
-            </Form.Item>
+                <CPasswordInput aria-label="Password input"/>
+            </CFormItem>
             <Flex justify="space-between" align="center">
-                <Form.Item<FieldType> name="remember" valuePropName="checked" label={null}>
+                <CFormItem<FieldType> name="remember" valuePropName="checked" label={null}>
                     <Checkbox>Remember me</Checkbox>
-                </Form.Item>
+                </CFormItem>
                 <a href="">Forgot password</a>
             </Flex>
 
-            <Form.Item>
-                <Button block type="primary" htmlType="submit">
-                    Log in
-                </Button>
+            <CFormItem>
+                <CButton label={'Register'} type="primary"/>
+
                 or <Link to='/register'>Register now!</Link>
-            </Form.Item>
-        </Form>
+            </CFormItem>
+        </CForm>
     </div>
 );
 

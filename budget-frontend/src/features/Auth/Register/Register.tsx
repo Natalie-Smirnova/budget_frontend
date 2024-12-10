@@ -1,10 +1,10 @@
 import React, { useState } from 'react';
 import {
-    Button,
-    Form,
-    Input,
     Grid
 } from 'antd';
+import {CButton} from '../../../common/Button';
+import {CForm, CFormItem} from '../../../blocks/Form';
+import {CInput, CPasswordInput} from '../../../common/Input'
 
 const { useBreakpoint } = Grid;
 
@@ -40,14 +40,14 @@ const tailFormItemLayout = {
 };
 
 export const Register: React.FC = () => {
-    const [form] = Form.useForm();
+    const [form] = CForm.useForm();
     const screens = useBreakpoint()
 
     const onFinish = (values: RegisterFormValues) => {
         console.log('Received values of form: ', values);
     };
     return (
-        <Form
+        <CForm
             {...formItemLayout}
             form={form}
             name="register"
@@ -55,7 +55,7 @@ export const Register: React.FC = () => {
             style={{ minWidth: screens.xs ? '100%' : '500px' }}
             scrollToFirstError
         >
-            <Form.Item
+            <CFormItem
                 name="email"
                 label="E-mail"
                 rules={[
@@ -69,10 +69,10 @@ export const Register: React.FC = () => {
                     },
                 ]}
             >
-                <Input aria-label="Email input"/>
-            </Form.Item>
+                <CInput aria-label="Email input"/>
+            </CFormItem>
 
-            <Form.Item
+            <CFormItem
                 name="password"
                 label="Password"
                 rules={[
@@ -83,10 +83,10 @@ export const Register: React.FC = () => {
                 ]}
                 hasFeedback
             >
-                <Input.Password aria-label="Password input"/>
-            </Form.Item>
+                <CPasswordInput aria-label="Password input"/>
+            </CFormItem>
 
-            <Form.Item
+            <CFormItem
                 name="confirm"
                 label="Confirm Password"
                 dependencies={['password']}
@@ -106,15 +106,15 @@ export const Register: React.FC = () => {
                     }),
                 ]}
             >
-                <Input.Password aria-label="Password input conformation"/>
-            </Form.Item>
+                <CPasswordInput aria-label="Password input conformation"/>
+            </CFormItem>
 
-            <Form.Item {...tailFormItemLayout}>
-                <Button type="primary" htmlType="submit">
+            <CFormItem {...tailFormItemLayout}>
+                <CButton type="primary" htmlType="submit">
                     Register
-                </Button>
-            </Form.Item>
-        </Form>
+                </CButton>
+            </CFormItem>
+        </CForm>
     );
 };
 

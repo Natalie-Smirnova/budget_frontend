@@ -1,7 +1,7 @@
 import React from 'react';
-import {Table} from "antd";
+import {CTable} from '../../blocks/Table';
 
-export const ExpensesOverview = () => {
+export const TransactionsList = () => {
 
     const columns = [
         {
@@ -76,6 +76,6 @@ export const ExpensesOverview = () => {
 
 
 
-    return <Table dataSource={dataSource} columns={columns}/>;
+    return <CTable dataSource={dataSource} columns={columns}/>;
 };
 
