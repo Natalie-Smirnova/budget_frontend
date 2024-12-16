@@ -1,6 +1,6 @@
 import React, { useState } from 'react';
 import { Modal, ModalProps} from 'antd';
-import {CButton} from "../common/Button";
+import {CButton} from "../atoms/Button";
 
 
 type CModalProps = ModalProps & {

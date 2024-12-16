@@ -3,9 +3,9 @@ import s from './style.module.css';
 import type {FormProps} from 'antd';
 import { Checkbox, Flex} from 'antd';
 import {Link} from 'react-router-dom';
-import {CButton} from '../../../common/Button';
-import {CForm, CFormItem} from '../../../blocks/Form';
-import {CInput, CPasswordInput} from '../../../common/Input'
+import {CButton} from '../../../atoms/Button';
+import {CForm, CFormItem} from '../../../molecules/Form';
+import {CInput, CPasswordInput} from '../../../atoms/Input'
 
 type FieldType = {
     username?: string;
@@ -13,15 +13,11 @@ type FieldType = {
     remember?: string;
 };
 
-const onFinish: FormProps<FieldType>['onFinish'] = (values) => {
-    console.log('Success:', values);
-};
-
-const onFinishFailed: FormProps<FieldType>['onFinishFailed'] = (errorInfo) => {
-    console.log('Failed:', errorInfo);
-};
-
-export const Login: React.FC = () => (
+interface LoginFormProps<T> extends FormProps<T> {
+    onFinish?: (val: any) => void;
+    onFinishFailed?: (val : any) => void;
+}
+export const LoginForm: React.FC<LoginFormProps<FieldType>> = ({onFinish, onFinishFailed}) => (
     <div className={s.container}>
         <CForm
             name="basic"

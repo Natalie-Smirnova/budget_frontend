@@ -1,17 +1,18 @@
 import React, { useState } from 'react';
 import {
+    type FormProps,
     Grid
 } from 'antd';
-import {CButton} from '../../../common/Button';
-import {CForm, CFormItem} from '../../../blocks/Form';
-import {CInput, CPasswordInput} from '../../../common/Input'
+import {CButton} from '../../../atoms/Button';
+import {CForm, CFormItem} from '../../../molecules/Form';
+import {CInput, CPasswordInput} from '../../../atoms/Input'
+import {formItemLayout, tailFormItemLayout} from "../../../config/formLayouts";
 
 const { useBreakpoint } = Grid;
 
-interface DataNodeType {
-    value: string;
-    label: string;
-    children?: DataNodeType[];
+interface LoginFormProps<T> extends FormProps<T> {
+    onFinish?: (val: any) => void;
+    onFinishFailed?: (val : any) => void;
 }
 
 interface RegisterFormValues {
@@ -20,38 +21,19 @@ interface RegisterFormValues {
     confirm: string;
 }
 
-const formItemLayout = {
-    labelCol: {
-        xs: { span: 24 },
-        sm: { span: 8 },
-    },
-    wrapperCol: {
-        xs: { span: 24 },
-        sm: { span: 16 },
-    },
-};
 
-const tailFormItemLayout = {
-    wrapperCol: {
-        xs: { span: 24, offset: 0 },
-        sm: { span: 16, offset: 4 },
-        lg: { span: 16, offset: 4 },
-    },
-};
 
-export const Register: React.FC = () => {
+export const RegisterForm: React.FC<LoginFormProps<FormProps>> = ({onFinish, onFinishFailed}) => {
     const [form] = CForm.useForm();
     const screens = useBreakpoint()
 
-    const onFinish = (values: RegisterFormValues) => {
-        console.log('Received values of form: ', values);
-    };
     return (
         <CForm
             {...formItemLayout}
             form={form}
             name="register"
             onFinish={onFinish}
+            onFinishFailed={onFinishFailed}
             style={{ minWidth: screens.xs ? '100%' : '500px' }}
             scrollToFirstError
         >
