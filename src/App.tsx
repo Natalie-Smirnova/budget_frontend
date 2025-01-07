@@ -1,15 +1,16 @@
 import React from 'react';
-import {ExpensesOverview} from './components/ExpensesOverview'
-import {Login} from './components/Login/Login'
-import {Register} from './components/Register/Register'
-import {BrowserRouter as Router, Routes, Route, Link, useNavigate} from 'react-router-dom';
+import {LoginPage} from './pages/LoginPage'
+import {RegisterPage} from './pages/RegisterPage'
+import {BrowserRouter as Router, Routes, Route} from 'react-router-dom';
+import {TransactionsPage} from "./pages/TransactionsPage";
 
 const App = () => {
     return (
         <Router>
             <Routes>
-                <Route path="/register" element={<Register />} />
-                <Route path="/login" element={<Login/>} />
+                <Route path="/register" element={<RegisterPage />} />
+                <Route path="/login" element={<LoginPage/>} />
+                <Route path="/transactions" element={<TransactionsPage/>} />
             </Routes>
         </Router>
     );
